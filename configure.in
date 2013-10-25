@@ -1,0 +1,53 @@
+###################################################################
+#
+# uWidget for C++
+#
+# Copyright (C) Satoshi Konno 2002-2012
+#
+# This is licensed under BSD-style license, see file COPYING.
+#
+###################################################################
+
+AC_INIT(src/cybergarage/widget/cgwidget.h)
+AC_CONFIG_AUX_DIR(config)
+
+AM_INIT_AUTOMAKE(uwidgetcc, 1.0)
+AM_CONFIG_HEADER(config.h)
+
+##############################
+# Checks for programs.
+##############################
+
+AC_PROG_CXX
+
+##############################
+# Checks for enable options.
+##############################
+
+AC_CHECK_LIB([expat],[main],,[AC_MSG_ERROR(uWidget need Expat)])
+AC_CHECK_LIB([clinkc],[main],,[AC_MSG_ERROR(uWidget need CyberLink for C)])
+AC_CHECK_LIB([js],[main],,[AC_MSG_ERROR(uWidget need SpiderMonkey 1.6.0)])
+AC_CHECK_LIB([png],[main],,[AC_MSG_ERROR(uWidget need libpng)])
+AC_CHECK_LIB([GL],[main],,[AC_MSG_ERROR(uWidget need GL)])
+AC_CHECK_LIB([GLU],[main],,[AC_MSG_ERROR(uWidget need GLU)])
+AC_CHECK_LIB([glut],[main],,[AC_MSG_ERROR(uWidget need GLUT)])
+
+AC_CHECK_LIB(xml2, xmlSAXUserParseMemory,[
+		XML_CFLAGS=`pkg-config libxml-2.0 --cflags`
+		AC_SUBST(XML_CFLAGS)
+		XML_LIBS=`pkg-config libxml-2.0 --libs`
+		AC_SUBST(XML_LIBS)
+	],[
+		AC_MSG_ERROR(uWidget needs libxml2)
+	])
+
+##############################
+# Makefiles
+##############################
+
+AC_OUTPUT([
+Makefile
+examples/Makefile
+examples/glut/Makefile
+examples/glut/unix/Makefile
+])

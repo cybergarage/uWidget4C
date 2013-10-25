@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Information>
+    <name>(アプリ名)</name>
+    <provider>(アプリ提供者名)</provider> 
+    <detail>(アプリ詳細説明文)</detail>
+    <contact>http://example.com/</contact>
+    <url>http://example.com/</url>
+</Information>

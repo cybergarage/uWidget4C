@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Widget>
+    <Component name="widget">
+        <Bitmap name="initial-bg"/>
+        <Bitmap name="active-bg"/>
+        <Text name="mode" x="-100" y="0"  rgba="000000ff" str="Current Mode"/>
+        <Text name="func" x="-100" y="30" rgba="000000ff" str="Function Name"/>
+    </Component>
+</Widget>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Preference>
+    <Item name="Item1" type="text" label="テキスト入力タイプです" multibyte="1"/>
+    <Item name="Item2" type="single_select" label="複数から１項目を選択するタイプです">
+        <option value="12">魚座</option>
+        <option value="11">水瓶座</option>
+        <option value="10">山羊座</option>
+        <option value="9">射手座</option>
+        <option value="8">蠍座</option>
+        <option value="7">天秤座</option>
+        <option value="6">乙女座</option>
+        <option value="5">獅子座</option>
+        <option value="4">蟹座</option>
+        <option value="3">双子座</option>
+        <option value="2">牡牛座</option>
+        <option value="1">牡羊座</option>
+    </Item>
+    <Item name="Item3" type="multi_select" label="複数から複数項目を選択するタイプです">
+        <option value="1">カレーライス</option>
+        <option value="2">パスタ</option>
+        <option value="3">オムライス</option>
+        <option value="4">親子丼</option>
+        <option value="5">坦々麺</option>
+    </Item>
+</Preference>

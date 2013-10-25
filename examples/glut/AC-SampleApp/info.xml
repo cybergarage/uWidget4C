@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Info>
+    <name>(アプリ名)</name>
+    <width>280</width>
+    <height>165</height>
+    <preference>1</preference>
+    <profile>
+        <spec>AC2.0</spec>
+    </profile>
+    <description>(アプリ説明文)</description>
+    <provider>(アプリ提供者名)</provider>
+</Info>
