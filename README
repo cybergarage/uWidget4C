@@ -1,0 +1,7 @@
+==============================
+ uWidgetEngine for C
+==============================
+
+uWidgetEngine is a protype widget engine for embedded platforms such as television. The widget engine was developing as a compatible widget engine for Applicast which is Sony's television widget engine.
+
+I stopped the development some years ago. Please check the source code if you have any interesting to implement widget engine framework :-)
